@@ -1,27 +1,7 @@
-# Mobile Middletier
-The middletier that handles gathering and transforming Arc content for various Mobile Apps
+# Node API Starter Kit
 
-## Local Development
-This project leverages Docker for local development, make sure Docker and Docker Compose are installed before continuing. The local server also uses hot-reload, keep in mind it will take a few seconds for Express to restart after making code changes.
-1. Run ```npm install --only=dev``` to install eslint locally
-2. Create [pm2.json](https://confluence.phillynews.com/display/ENG/Mobile+Middletier) in project root.
-
-### Start the Docker containers
-
-```sh
-docker-compose up server -d 
-```
-
-### Stop the Docker containers
-```sh
-docker-compose down
-```
-
-## Tests
-
-To the run the test suite (via Docker)
-```sh
-docker-compose up tests
-```
-
-## Routes
+1. convict v4.2.0
+"express": "^4.16.3",
+"helmet": "^3.12.1",
+"raven": "^2.6.2",
+"winston": "^2.4.2"
