@@ -1,0 +1,40 @@
+{
+  "name": "mobile-middletier",
+  "version": "1.0.0",
+  "description": "The middletier that handles gathering and transforming Arc content for various Mobile Apps",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start-docker": "pm2 start pm2.json --update-env --no-daemon",
+    "start": "pm2 start pm2.json",
+    "start-tests": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/phillymedia/mobile-middletier.git"
+  },
+  "author": "Philadelphia Media Network",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/phillymedia/mobile-middletier/issues"
+  },
+  "homepage": "https://github.com/phillymedia/mobile-middletier#readme",
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "eslint": "^4.19.1",
+    "eslint-config-standard": "^11.0.0",
+    "eslint-plugin-import": "^2.12.0",
+    "eslint-plugin-node": "^6.0.1",
+    "eslint-plugin-promise": "^3.7.0",
+    "eslint-plugin-standard": "^3.1.0",
+    "mocha": "^5.2.0",
+    "supertest": "^3.1.0"
+  },
+  "dependencies": {
+    "convict": "^4.2.0",
+    "express": "^4.16.3",
+    "helmet": "^3.12.1",
+    "raven": "^2.6.2",
+    "winston": "^2.4.2"
+  }
+}

@@ -1,0 +1,18 @@
+version: '3'
+services:
+  # API + Workers
+  server:
+    build:
+      context: ./docker/server
+      dockerfile: Dockerfile
+    volumes:
+      # Just copy everything (including node_modules) into the container. Not ideal, but easy for now.
+      - .:/var/www/app
+    ports:
+      - "7197:7197"
+  tests:
+    build:
+      context: ./docker/test
+      dockerfile: Dockerfile
+    volumes:
+      - .:/var/www/app
